@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi Minds</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- NAVBAR START -->
+    <nav class=" bg-purple-600  p-4">
+        <ul class="flex justify-center space-x-6  text-white font-bold text-lg">
+            <div class="h-8 hover:text-xl ">
+                <li class="relative group">
+                    <a href="#" class="block h-8 hover:text-xl">Home</a>
+                    <div class="absolute left-0 bottom-0 h-2 w-full bg-purple-400 scale-x-0 rounded-xl group-hover:scale-x-100 transition-transform duration-200"></div>
+                </li>
+                
+                </div>
+                <div class="h-8 hover:text-xl ">
+                    <li class="relative group">
+                        <a href="#" class="block h-8 hover:text-xl">Symptoms Checker</a>
+                        <div class="absolute left-0 bottom-0 h-2 w-full bg-purple-400 scale-x-0 rounded-xl group-hover:scale-x-100 transition-transform duration-200"></div>
+                    </li>
+                </div>
+                <div class="h-8 hover:text-xl ">
+                    <li class="relative group">
+                        <a href="#" class="block h-8 hover:text-xl">Medicines</a>
+                        <div class="absolute left-0 bottom-0 h-2 w-full bg-purple-400 scale-x-0 rounded-xl group-hover:scale-x-100 transition-transform duration-200"></div>
+                    </li>
+                </div>
+                <div class="h-8 hover:text-xl ">
+                    <li class="relative group">
+                        <a href="#" class="block h-8 hover:text-xl">How It Works</a>
+                        <div class="absolute left-0 bottom-0 h-2 w-full bg-purple-400 scale-x-0 rounded-xl group-hover:scale-x-100 transition-transform duration-200"></div>
+                    </li>
+                </div>
+                <div class="h-8 hover:text-xl ">
+                    <li class="relative group">
+                        <a href="#" class="block h-8 hover:text-xl">Contact Us</a>
+                        <div class="absolute left-0 bottom-0 h-2 w-full bg-purple-400 scale-x-0 rounded-xl group-hover:scale-x-100 transition-transform duration-200"></div>
+                    </li>
+                </div>
+                <div class="h-8 hover:text-xl ">
+                    <li class="relative group">
+                        <a href="#" class="block h-8 hover:text-xl">About Us</a>
+                        <div class="absolute left-0 bottom-0 h-2 w-full bg-purple-400 scale-x-0 rounded-xl group-hover:scale-x-100 transition-transform duration-200"></div>
+                    </li>
+                </div>
+            
+        </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Main Content -->
+    <section class="h-screen flex items-center justify-center bg-gray-100">
+        <div class="relative w-[90%] max-w-6xl h-[80vh] p-10 border border-gray-500 bg-white shadow-[0_10px_50px_rgba(0,0,0,0.3)] shadow-gray-700 rounded-xl flex flex-col justify-center">
+            
+            <!-- Centered Top Text -->
+            <h2 class="absolute top-4 mt-4 left-1/2 transform -translate-x-1/2 text-5xl font-semibold text-purple-500">
+               HEALTH SPOT 24/7
+            </h2>
+    
+            <!-- Animated Welcome Heading (Slides Left to Right) -->
+            <h1 class="font-bold text-blue-600 text-6xl  top-24 left-52 absolute opacity-0 translate-x-[-100%] animate-slide-in-out">
+                PRESENTED BY MEDI MINDS
+            </h1>
+    
+            <!-- Content Wrapper (Text + Image Side by Side) -->
+            <div class="flex w-full items-center justify-between mt-10">
+                
+                <!-- Key Features List (Left Side) -->
+                <ul class="w-1/2 text-xl text-gray-800 space-y-4">
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; AI-powered symptom checker</li>
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; Instant medicine recommendations</li>
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; User-friendly interface</li>
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; 24/7 health assistance</li>
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; Data security and privacy ensured</li>
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; Integration with pharmacy databases</li>
+                    <li class="flex items-center"><span class="text-blue-500 text-3xl">🔹</span>&nbsp; Supports multiple languages</li>
+                </ul>
+    
+                <!-- Image (Right Side) -->
+                <div class="w-1/2 flex justify-center items-center">
+                    <img src="./images/Logo2.png" alt="Medi Minds Logo" class="w-full max-h-180 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tailwind Custom Animation -->
+    <style>
+        @keyframes slide-in-out {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            25% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+            75% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+        
+        .animate-slide-in-out {
+            animation: slide-in-out 3s ease-in-out forwards;
+        }
+        
+        /* Add this to prevent horizontal scroll */
+        .relative {
+            overflow: hidden;
+        }
+        </style>
+    
+    
+    <!--Main Content End-->
+          <!--CHECKUP SECTION-->
+          <section class="h-screen w-full flex items-center justify-center bg-gray-100 p-6">
+            <div class="w-[80%] h-[80%] border border-gray-300 bg-white shadow-xl rounded-lg p-8 flex flex-col">
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-8">
+                    <div id="progress" class="bg-purple-600 h-2.5 rounded-full transition-all" style="width: 0%"></div>
+                </div>
+        
+                <!-- Main Content -->
+                <div class="flex-1 overflow-y-auto">
+                    <!-- Step 1: Primary Symptoms -->
+                    <div class="step active">
+                        <h1 class="text-4xl font-bold text-purple-600 mb-8 text-center mt-4">Medical Checkup / चिकित्सीय जांच</h1>
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">What symptoms are you experiencing? / आपको कौन से लक्षण हैं?</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="option-btn">Fever / बुखार</button>
+                            <button class="option-btn">Headache / सिरदर्द</button>
+                            <button class="option-btn">Body Aches / शरीर में दर्द</button>
+                            <button class="option-btn">Chills / ठंड लगना</button>
+                            <button class="option-btn">Cough / खांसी</button>
+                            <button class="option-btn">Fatigue / थकान</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 2: Symptom Duration -->
+                    <div class="step">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">How long have you had these symptoms? / ये लक्षण कब से हैं?</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="duration-btn">1 Day / 1 दिन</button>
+                            <button class="duration-btn">2 Days / 2 दिन</button>
+                            <button class="duration-btn">3 Days / 3 दिन</button>
+                            <button class="duration-btn">1 Week / 1 सप्ताह</button>
+                            <button class="duration-btn">2 Weeks / 2 सप्ताह</button>
+                            <button class="duration-btn">1 Month / 1 महीना</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 3: Fever Pattern -->
+                    <div class="step">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">Fever Type / बुखार का प्रकार</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="specific-btn">Continuous / निरंतर</button>
+                            <button class="specific-btn">Intermittent / रुक-रुक कर</button>
+                            <button class="specific-btn">With Chills / कंपकंपी के साथ</button>
+                            <button class="specific-btn">High Grade / तेज बुखार</button>
+                            <button class="specific-btn">Low Grade / हल्का बुखार</button>
+                            <button class="specific-btn">Night Sweats / रात को पसीना</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 4: Pain Details -->
+                    <div class="step">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">Pain Location / दर्द का स्थान</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="specific-btn">Head / सिर</button>
+                            <button class="specific-btn">Chest / छाती</button>
+                            <button class="specific-btn">Abdomen / पेट</button>
+                            <button class="specific-btn">Joints / जोड़</button>
+                            <button class="specific-btn">Muscles / मांसपेशियां</button>
+                            <button class="specific-btn">Back / पीठ</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 5: Gastrointestinal -->
+                    <div class="step">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">Stomach Issues / पेट संबंधी समस्याएं</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="specific-btn">Nausea / मतली</button>
+                            <button class="specific-btn">Vomiting / उल्टी</button>
+                            <button class="specific-btn">Diarrhea / दस्त</button>
+                            <button class="specific-btn">Constipation / कब्ज</button>
+                            <button class="specific-btn">Loss of Appetite / भूख न लगना</button>
+                            <button class="specific-btn">Abdominal Pain / पेट दर्द</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 6: Respiratory -->
+                    <div class="step">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">Breathing Issues / सांस संबंधी समस्याएं</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="specific-btn">Cough / खांसी</button>
+                            <button class="specific-btn">Shortness of Breath / सांस लेने में तकलीफ</button>
+                            <button class="specific-btn">Chest Pain / छाती में दर्द</button>
+                            <button class="specific-btn">Wheezing / घरघराहट</button>
+                            <button class="specific-btn">Sputum / बलगम</button>
+                            <button class="specific-btn">Blood in Sputum / बलगम में खून</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 7: Medical History -->
+                    <div class="step">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-6">Medical History / चिकित्सा इतिहास</h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <button class="specific-btn">Diabetes / मधुमेह</button>
+                            <button class="specific-btn">Hypertension / उच्च रक्तचाप</button>
+                            <button class="specific-btn">Heart Disease / हृदय रोग</button>
+                            <button class="specific-btn">Asthma / अस्थमा</button>
+                            <button class="specific-btn">TB / टीबी</button>
+                            <button class="specific-btn">None / कोई नहीं</button>
+                        </div>
+                    </div>
+        
+                    <!-- Step 8: Diagnosis -->
+                    <div class="step" id="diagnosis-section">
+                        <div class="p-6 bg-gray-50 rounded-xl border border-purple-200">
+                            <h2 class="text-3xl font-bold text-red-600 mb-4">Diagnosis Result / निदान परिणाम</h2>
+                            <p class="text-2xl font-semibold text-gray-800 mb-4">Condition: 
+                                <span id="diagnosis" class="text-purple-600">Loading... / लोड हो रहा है...</span>
+                            </p>
+                            <div class="mb-6">
+                                <h3 class="text-xl font-semibold text-gray-700 mb-3">Recommended Medicines / सुझाई गई दवाएं:</h3>
+                                <ul id="medications" class="list-disc ml-6 space-y-2 text-gray-600"></ul>
+                            </div>
+                            <div class="bg-yellow-100 p-4 rounded-lg">
+                                <h3 class="text-lg font-semibold text-yellow-800 mb-2">Important Note / महत्वपूर्ण सूचना:</h3>
+                                <p class="text-yellow-700">Consult a physician for proper diagnosis and treatment. / सही निदान और उपचार के लिए चिकित्सक से परामर्श करें।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Navigation Controls -->
+                <div class="w-full flex justify-between mt-8">
+                    <button id="prev-btn" class="nav-btn hidden" onclick="prevStep()">← Previous / पिछला</button>
+                    <button id="next-btn" class="nav-btn bg-purple-600 text-white" onclick="nextStep()">Next / अगला →</button>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+            .option-btn, .duration-btn, .specific-btn {
+                @apply px-6 py-3 bg-white border-2 border-purple-100 rounded-xl text-gray-700 
+                       hover:border-purple-400 hover:bg-purple-50 transition-all duration-200
+                       active:scale-95 font-medium text-left;
+            }
+        
+            .nav-btn {
+                @apply px-8 py-3 rounded-lg font-semibold transition-colors duration-200
+                       hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed;
+            }
+        
+            .step {
+                @apply opacity-0 translate-y-5 transition-all duration-300 ease-out;
+                height: 0;
+                overflow: hidden;
+            }
+        
+            .step.active {
+                @apply opacity-100 translate-y-0;
+                height: auto;
+                overflow: visible;
+            }
+        
+            .selected {
+                @apply bg-purple-200 border-purple-400;
+            }
+        </style>
+        
+        <script>
+            let currentStep = 0;
+            let steps = [];
+            let totalSteps = 0;
+            let symptomsData = {
+                selectedSymptoms: [],
+                duration: '',
+                feverPattern: '',
+                painLocation: [],
+                gastrointestinal: [],
+                respiratory: [],
+                medicalHistory: []
+            };
+        
+            // Initialize after DOM loads
+            document.addEventListener('DOMContentLoaded', () => {
+                steps = Array.from(document.querySelectorAll('.step'));
+                totalSteps = steps.length;
+                
+                steps.forEach((step, index) => {
+                    index === 0 ? 
+                        step.classList.add('active') : 
+                        step.classList.add('hidden');
+                });
+                updateNavButtons();
+            });
+        
+            // Navigation Functions
+            function nextStep() {
+                if(currentStep >= totalSteps - 1) return;
+                transitionStep(currentStep, currentStep + 1);
+                currentStep++;
+                if(currentStep === totalSteps - 1) showDiagnosis();
+                updateUI();
+            }
+        
+            function prevStep() {
+                if(currentStep <= 0) return;
+                transitionStep(currentStep, currentStep - 1);
+                currentStep--;
+                updateUI();
+            }
+        
+            // Step Transition Handler
+            function transitionStep(oldIndex, newIndex) {
+                steps[oldIndex].classList.remove('active');
+                steps[oldIndex].classList.add('hidden');
+                steps[newIndex].classList.remove('hidden');
+                steps[newIndex].classList.add('active');
+            }
+        
+            // UI Updates
+            function updateUI() {
+                updateProgress();
+                updateNavButtons();
+            }
+        
+            function updateProgress() {
+                const progress = ((currentStep + 1) / totalSteps) * 100;
+                document.getElementById('progress').style.width = `${progress}%`;
+            }
+        
+            function updateNavButtons() {
+                document.getElementById('prev-btn').classList.toggle('hidden', currentStep === 0);
+                document.getElementById('next-btn').classList.toggle('hidden', currentStep === totalSteps - 1);
+            }
+        
+            // Symptom Selection Handling
+            document.querySelectorAll('.option-btn, .duration-btn, .specific-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.classList.toggle('selected');
+                    updateSymptomsData(this);
+                });
+            });
+        
+            function updateSymptomsData(button) {
+                const fullText = button.textContent;
+                const [englishValue] = fullText.split(' / ');
+                const category = button.classList.contains('option-btn') ? 'selectedSymptoms' :
+                                button.classList.contains('duration-btn') ? 'duration' :
+                                button.classList.contains('specific-btn') ? getSpecificCategory() : 'medicalHistory';
+        
+                function getSpecificCategory() {
+                    const stepTitles = [
+                        'Fever Type', 
+                        'Pain Location',
+                        'Stomach Issues',
+                        'Breathing Issues',
+                        'Medical History'
+                    ];
+                    const currentTitle = steps[currentStep].querySelector('h2').textContent;
+                    return stepTitles.indexOf(currentTitle.split(' / ')[0]) === 3 ? 'respiratory' :
+                           stepTitles.indexOf(currentTitle.split(' / ')[0]) === 2 ? 'gastrointestinal' :
+                           'painLocation';
+                }
+        
+                if(Array.isArray(symptomsData[category])) {
+                    const index = symptomsData[category].indexOf(englishValue);
+                    index === -1 ? symptomsData[category].push(englishValue) : symptomsData[category].splice(index, 1);
+                } else {
+                    symptomsData[category] = englishValue;
+                }
+            }
+        
+            // Diagnosis Logic with Bilingual Medicine Names
+            function showDiagnosis() {
+                const conditions = {
+                    "Dengue / डेंगू": {
+                        symptoms: ["Fever", "Headache", "Body Aches"],
+                        medication: [
+                            "Paracetamol (पैरासिटामोल)", 
+                            "Papaya Leaf Extract (पपीते के पत्ते का अर्क)",
+                            "ORS (ओआरएस)"
+                        ]
+                    },
+                    "Typhoid / टाइफाइड": {
+                        symptoms: ["Continuous", "High Grade", "Abdominal Pain"],
+                        medication: [
+                            "Ciprofloxacin (सिप्रोफ्लॉक्सासिन)", 
+                            "Azithromycin (एज़िथ्रोमाइसिन)",
+                            "Probiotics (प्रोबायोटिक्स)"
+                        ]
+                    },
+                    "Malaria / मलेरिया": {
+                        symptoms: ["Intermittent", "With Chills", "Night Sweats"],
+                        medication: [
+                            "Chloroquine (क्लोरोक्वीन)", 
+                            "Artemether (आर्टीमीथर)",
+                            "Doxycycline (डॉक्सीसाइक्लिन)"
+                        ]
+                    }
+                };
+        
+                let diagnosis = "General Viral Infection / सामान्य वायरल संक्रमण";
+                let medications = ["Rest / आराम", "Hydration / पानी", "Paracetamol / पैरासिटामोल"];
+        
+                // Diagnosis Logic
+                for(const [condition, data] of Object.entries(conditions)) {
+                    if(data.symptoms.every(s => symptomsData.selectedSymptoms.includes(s))) {
+                        diagnosis = condition;
+                        medications = data.medication;
+                        break;
+                    }
+                }
+        
+                // Update Display
+                document.getElementById('diagnosis').textContent = diagnosis;
+                document.getElementById('medications').innerHTML = medications
+                    .map(m => `<li class="text-lg">${m}</li>`)
+                    .join('');
+            }
+        </script>
+    <!--CHECKUP SECTION END-->
+    
+    <button id="prev-btn" class="nav-btn hidden" onclick="prevStep()">← Previous</button>
+
+    <!--How It WORKS-->
+   <!-- How It Works Section -->
+<section class="py-16 bg-gradient-to-b from-purple-50 to-white">
+    <div class="container mx-auto px-4">
+        <!-- Section Heading -->
+        <h2 class="text-4xl font-bold text-center text-purple-600 mb-12">
+            <span class="border-b-4 border-purple-500 pb-2">How Medi Minds Works</span>
+        </h2>
+
+        <!-- Process Steps -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-3xl text-purple-600">🩺</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-purple-800 mb-3">Symptom Analysis</h3>
+                <p class="text-gray-600 mb-4">
+                    Describe your symptoms through our intelligent AI-powered questionnaire. 
+                    Our system analyzes over 100+ medical parameters to understand your condition.
+                </p>
+                <div class="text-purple-600 font-medium">Step 1</div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-3xl text-purple-600">🤖</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-purple-800 mb-3">AI Diagnosis</h3>
+                <p class="text-gray-600 mb-4">
+                    Our advanced machine learning model cross-references your symptoms with 
+                    medical databases to provide preliminary diagnosis and risk assessment.
+                </p>
+                <div class="text-purple-600 font-medium">Step 2</div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-3xl text-purple-600">💊</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-purple-800 mb-3">Medicine Recommendations</h3>
+                <p class="text-gray-600 mb-4">
+                    Receive personalized medicine suggestions with dosage instructions, 
+                    possible side effects, and alternative options based on your medical history.
+                </p>
+                <div class="text-purple-600 font-medium">Step 3</div>
+            </div>
+        </div>
+
+        <!-- Detailed Process -->
+        <div class="mt-16 max-w-4xl mx-auto">
+            <div class="space-y-8">
+                <!-- Pharmacy Integration -->
+                <div class="flex items-start gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl text-purple-600">🏥</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-purple-800 mb-2">Integrated Pharmacy Network</h3>
+                        <p class="text-gray-600">
+                            We partner with certified pharmacies across India to ensure quick access to medications. 
+                            Our system checks real-time availability and provides multiple purchasing options.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Delivery System -->
+                <div class="flex items-start gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl text-purple-600">🚚</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-purple-800 mb-2">Fast Delivery System</h3>
+                        <p class="text-gray-600">
+                            Choose between doorstep delivery or pharmacy pickup. Our logistics partners 
+                            ensure medications reach you within 4-24 hours depending on your location.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Follow-up Care -->
+                <div class="flex items-start gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl text-purple-600">📅</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-purple-800 mb-2">Follow-up Care</h3>
+                        <p class="text-gray-600">
+                            Receive automatic reminders for medication schedules and follow-up consultations. 
+                            Track your recovery progress through our health monitoring dashboard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-12 text-center bg-purple-100 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-purple-800 mb-4">Ready to Get Started?</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Join thousands of satisfied users who have transformed their healthcare experience 
+                    with Medi Minds. Your journey to better health starts here!
+                </p>
+                <button class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold
+                            hover:bg-purple-700 transition-colors duration-200 shadow-lg
+                            hover:shadow-purple-300">
+                    Start Symptom Check
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- style section of How It WORKS -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .shadow-purple-300 {
+        box-shadow: 0 10px 15px -3px rgba(147, 51, 234, 0.1), 0 4px 6px -4px rgba(147, 51, 234, 0.1);
+    }
+</style>
+
+<!--ABOUT US-->
+<!-- About Us Section -->
+<!-- Team Section -->
+<section class="py-16 bg-purple-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-4xl font-bold text-center text-purple-600 mb-12">
+            Our Expert Team
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Founder Card -->
+            <div class="bg-white p-6 rounded-xl shadow-lg relative">
+                <div class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-1 rounded-bl-xl">
+                    Founder & CEO
+                </div>
+                <div class="w-48 h-48 mx-auto mb-6">
+                    <img src="./images/mypic.png" 
+                         alt="Rohit Singh Rajput" 
+                         class="w-full h-full object-cover rounded-full border-4 border-purple-200">
+                </div>
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-2">
+                    Rohit Singh Rajput
+                </h3>
+                <p class="text-lg text-purple-600 text-center mb-4">
+                    Full Stack Developer
+                </p>
+                <p class="text-gray-600 text-center">
+                    Architect of Medi Minds with expertise in AI integration and system design
+                </p>
+            </div>
+
+            <!-- Harsh Singh -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-48 h-48 mx-auto mb-6">
+                    <img src="./images/harsh.jpeg" 
+                         alt="Harsh Singh" 
+                         class="w-full h-full object-cover rounded-full border-4 border-purple-200">
+                </div>
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-2">
+                    Harsh Singh
+                </h3>
+                <p class="text-lg text-purple-600 text-center mb-4">
+                    App Developer & 3D Designer
+                </p>
+                <p class="text-gray-600 text-center">
+                    Specializes in cross-platform mobile applications and interactive 3D models
+                </p>
+            </div>
+
+            <!-- Shivam Sharma -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-48 h-48 mx-auto mb-6">
+                    <img src="./images/shivam.jpeg" 
+                         alt="Shivam Sharma" 
+                         class="w-full h-full object-cover rounded-full border-4 border-purple-200">
+                </div>
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-2">
+                    Shivam Sharma
+                </h3>
+                <p class="text-lg text-purple-600 text-center mb-4">
+                    Senior App Developer
+                </p>
+                <p class="text-gray-600 text-center">
+                    Focused on performance optimization and user experience design
+                </p>
+            </div>
+
+            <!-- Nitin -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-48 h-48 mx-auto mb-6">
+                    <img src="./images/nitin.jpeg" 
+                         alt="Nitin" 
+                         class="w-full h-full object-cover rounded-full border-4 border-purple-200">
+                </div>
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-2">
+                    Nitin
+                </h3>
+                <p class="text-lg text-purple-600 text-center mb-4">
+                    Researcher & Graphic Designer
+                </p>
+                <p class="text-gray-600 text-center">
+                    Combines medical research with visual storytelling for effective health communication
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Team CTA -->
+        <div class="mt-12 text-center">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                Driving Innovation in Digital Healthcare
+            </h3>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                Our multidisciplinary team combines technical excellence with medical insights 
+                to revolutionize healthcare accessibility
+            </p>
+            <button class="bg-purple-600 text-white px-8 py-3 rounded-lg 
+                      font-semibold hover:bg-purple-700 transition-colors shadow-lg
+                      hover:shadow-purple-300">
+                Meet The Team
+            </button>
+        </div>
+    </div>
+</section>
+
+<!--CONTACT US -->
+<!-- Contact Us Section -->
+<section class="py-16 bg-white" id="contact">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-4xl font-bold text-center text-purple-600 mb-12">
+            Get in Touch
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold text-purple-800 mb-4">
+                        Contact Details
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <div>
+                                <p class="font-medium">Jaypee University of Information Technology</p>
+                                <p>Waknaghat, Solan</p>
+                                <p>Himachal Pradesh 173234</p>
+                                <a href="https://maps.app.goo.gl/JUIT" target="_blank" class="text-purple-600 hover:underline mt-2 block">
+                                    View on Google Maps →
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <a href="tel:+911234567890" class="hover:text-purple-600 transition-colors">
+                                +91 
+                            </a>
+                        </li>
+
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:contact@mediminds.com" class="hover:text-purple-600 transition-colors">
+                                contact@mediminds.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Map Embed -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.557737928845!2d77.13554631505422!3d30.92415548154002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f877f6a21c0a1%3A0x9b3d9fb4d676d0e8!2sJaypee%20University%20of%20Information%20Technology!5e0!3m2!1sen!2sin!4v1623931234567!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        class="rounded-xl">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-purple-50 p-8 rounded-xl">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="name">
+                            Full Name
+                        </label>
+                        <input type="text" 
+                               id="name" 
+                               class="w-full px-4 py-3 rounded-lg border border-purple-200 focus:outline-none focus:border-purple-500"
+                               placeholder="Enter your name">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="email">
+                            Email Address
+                        </label>
+                        <input type="email" 
+                               id="email" 
+                               class="w-full px-4 py-3 rounded-lg border border-purple-200 focus:outline-none focus:border-purple-500"
+                               placeholder="name@example.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="subject">
+                            Subject
+                        </label>
+                        <input type="text" 
+                               id="subject" 
+                               class="w-full px-4 py-3 rounded-lg border border-purple-200 focus:outline-none focus:border-purple-500"
+                               placeholder="Enter subject">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="message">
+                            Message
+                        </label>
+                        <textarea 
+                            id="message" 
+                            rows="6"
+                            class="w-full px-4 py-3 rounded-lg border border-purple-200 focus:outline-none focus:border-purple-500"
+                            placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg
+                                   font-semibold hover:bg-purple-700 transition-colors
+                                   shadow-lg hover:shadow-purple-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="mt-12 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                Connect With Us
+            </h3>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
